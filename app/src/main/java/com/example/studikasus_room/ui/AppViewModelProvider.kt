@@ -12,6 +12,11 @@ import com.example.studikasus_room.ui.item.ItemDetailsViewModel
 import com.example.studikasus_room.ui.item.ItemEditViewModel
 import com.example.studikasus_room.ui.item.ItemEntryViewModel
 
+/*
+kode berikut mendefinisikan objek AppViewModelProvider yang menyediakan sebuah Factory untuk menginisialisasi
+berbagai viewModel dengan menggunakan viewModelFactory. Beberapa ViewModel diinisialisasi dengan
+SavedStateHandle untuk mempertahankan data penting yang bisa diakses melalui navigasi.
+ */
 object AppViewModelProvider {
     val Factory = viewModelFactory {
         // Initializer for ItemEditViewModel
@@ -43,6 +48,9 @@ object AppViewModelProvider {
  * Extension function to queries for [Application] object and returns an instance of
  * [InventoryApplication].
  */
-
+/*
+Fungsi ekstensi dibawah ini berfungsi untuk mengambil objek dari CreationExtras dan mengembalikannya
+sebagai Inventory Application. Hal tersebut berguna untuk memudahkan akses ke instance application.
+ */
 fun CreationExtras.inventoryApplication(): InventoryApplication =
     (this[AndroidViewModelFactory.APPLICATION_KEY] as InventoryApplication)

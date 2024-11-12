@@ -2,6 +2,11 @@ package com.example.studikasus_room.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+/*
+File ini mendefinisikan warna-warna yang digunakan dalam aplikasi ke dalam bentuk variabel agar lebih
+mudah dalam penggunaan.
+ */
+
 val Purple80 = Color(0xFFD0BCFF)
 val PurpleGrey80 = Color(0xFFCCC2DC)
 val Pink80 = Color(0xFFEFB8C8)

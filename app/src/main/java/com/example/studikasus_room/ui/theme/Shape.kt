@@ -4,6 +4,10 @@ import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.material3.Shapes
 import androidx.compose.ui.unit.dp
 
+/*
+file ini mendefinisikan bentuk corner shape menjadi 3 kategori dengan ukuran tertentu untuk
+masing masing kategorinya.
+ */
 val Shapes = Shapes(
 
     extraSmall = CutCornerShape(topEnd = 8.dp, bottomStart = 8.dp),
